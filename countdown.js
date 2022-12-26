@@ -29,11 +29,10 @@ const contagemRegressiva = (tempo) => {
         atualizar (tempo);
         tempo--;
     }
-    //executa um "callback"(funcao) a cade tempo do segundo argumento
+   
      const id = setInterval(contar,1000)
 }
 const temporestante = () =>{
-    //javaScript tem como referencia a dat 1 janeiro 1970
     const dataEvento = new Date ("2022-12-19 20:00:00");
     const hoje = Date.now();
     return Math.floor((dataEvento - hoje) / 1000);
